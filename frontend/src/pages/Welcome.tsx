@@ -1,22 +1,14 @@
 import { Link } from 'react-router-dom';
-import { patient } from '../data/mock';
+import logo from '../assets/images/nutri-sfundo.png';
 
 export function Welcome() {
   return (
-    <div className="page hero">
-      <h1>Seja bem-vindo</h1>
-      <h2>{patient.name}</h2>
-      <p className="tagline">Seu plano nutricional e contatos em um só lugar.</p>
-      <div style={{ marginTop: 24 }}>
-        <Link to="/menu" className="button">
-          Entrar
-        </Link>
-      </div>
-      <div className="badge-grid">
-        <div className="badge">Objetivo: {patient.goal}</div>
-        <div className="badge">Altura: {patient.height}</div>
-        <div className="badge">Peso: {patient.weight}</div>
-      </div>
+    <div className="welcome-full">
+      <img src={logo} alt="Logomarca NutritioN" className="welcome-full__image" draggable="false" />
+      <h1 className="welcome-full__title">NutritioN</h1>
+      <Link to="/cadastro" className="button welcome-full__button">
+        Entrar
+      </Link>
     </div>
   );
 }

@@ -4,9 +4,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import { App } from './App';
 import './index.css';
 import { Welcome } from './pages/Welcome';
-import { Menu } from './pages/Menu';
 import { Dados } from './pages/Dados';
 import { Plano } from './pages/Plano';
+import { Cadastro } from './pages/Cadastro';
+import { CadastroPaciente } from './pages/CadastroPaciente';
+import { CadastroPlano } from './pages/CadastroPlano';
 import { Orientacoes } from './pages/Orientacoes';
 import { Contatos } from './pages/Contatos';
 import { NotFound } from './pages/NotFound';
@@ -17,7 +19,9 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route element={<App />}>
           <Route path="/" element={<Welcome />} />
-          <Route path="/menu" element={<Menu />} />
+          <Route path="/cadastro" element={<Cadastro />} />
+          <Route path="/cadastro/paciente" element={<CadastroPaciente />} />
+          <Route path="/cadastro/plano" element={<CadastroPlano />} />
           <Route path="/dados" element={<Dados />} />
           <Route path="/plano" element={<Plano />} />
           <Route path="/orientacoes" element={<Orientacoes />} />
