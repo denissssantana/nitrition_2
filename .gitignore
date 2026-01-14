@@ -29,3 +29,6 @@ backend/.settings/
 Thumbs.db
 .idea/
 .vscode/
+
+# Local JDKs
+.jdks/
