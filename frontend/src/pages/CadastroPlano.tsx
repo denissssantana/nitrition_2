@@ -1,5 +1,7 @@
-import { FormEvent, useState } from 'react';
+import { useState } from 'react';
+import type { FormEvent } from 'react';
 import { patient as mockPatient } from '../data/mock';
+
 
 type MealForm = { title: string; options: string };
 
